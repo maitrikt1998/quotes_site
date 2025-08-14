@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Birthday from "./pages/Birthday";
+import GoodMorning from "./pages/GoodMorning";
+import GoodNight from "./pages/GoodNight";
+import Congratulations from "./pages/Congratulations";
+import Motivation from "./pages/Motivation";
+import Friendship from "./pages/Friendship";
+import Love from "./pages/Love";
+import Anniversary from "./pages/Anniversary";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/birthday-wishes" element={<Birthday />} />
+        <Route path="/good-morning" element={<GoodMorning />} />
+        <Route path="/good-night" element={<GoodNight />} />
+        <Route path="/congratulations" element={<Congratulations />} />
+        <Route path="/motivation" element={<Motivation />} />
+        <Route path="/friendship" element={<Friendship />} />
+        <Route path="/love" element={<Love />} />
+        <Route path="/anniversary" element={<Anniversary />} />
+        
+      </Routes>
+  );
 }
 
-export default App
+export default App;
