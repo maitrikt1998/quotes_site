@@ -22,12 +22,6 @@ function Home() {
           Find the perfect words for any occasion — Birthday Wishes, Motivational Quotes, Anniversary Greetings,
           and more. Make every moment special with beautiful messages.
         </p>
-        <Link
-          to="/birthday-wishes"
-          className="bg-purple-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-purple-700 transition duration-300"
-        >
-          🎉 Explore Birthday Wishes
-        </Link>
       </header>
 
       <section className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-5xl">
