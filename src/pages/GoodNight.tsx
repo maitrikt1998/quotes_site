@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaRegCopy, FaCheck } from "react-icons/fa";
 
 function GoodNight() {
+
+  useEffect(() => {
+    document.title = "Good Night Wishes";
+  }, []);
+
   const wishes = [
     "Wishing you a day filled with love, laughter, and cake! 🎂",
     "May your birthday be the start of a year full of happiness and success. 🌟",

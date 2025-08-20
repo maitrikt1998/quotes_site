@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaRegCopy, FaCheck } from "react-icons/fa";
 
 function Motivation() {
+
+  useEffect(() => {
+    document.title = "Motivation Wishes";
+  }, []);
+
   const wishes = [
     "Wishing you a day filled with love, laughter, and cake! 🎂",
     "May your birthday be the start of a year full of happiness and success. 🌟",
@@ -26,7 +31,7 @@ function Motivation() {
         <header className="text-center max-w-2xl mt-8 mx-auto">
 
           <h1 className="text-4xl md:text-5xl font-extrabold text-pink-600 mb-4">
-            🎉 Happy Friendship Wishes 🎂
+            Motivation Quotes
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
             Celebrate your loved ones’ special day with warm, heartfelt, and joyful birthday messages.
